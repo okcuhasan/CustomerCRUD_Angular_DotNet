@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="action-bar">
+    <button class="btn btn-primary" (click)="initNewCustomer()">Create New Customer</button>
+  </div>
+
+  <table class="customer-table">
+    <thead>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Place</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let customer of customers">
+        <td>{{ customer.firstName }}</td>
+        <td>{{ customer.lastName }}</td>
+        <td>{{ customer.place }}</td>
+        <td>
+          <button class="btn btn-secondary" (click)="updateCustomer(customer)">Update</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <app-edit-customer 
+    [customer]="customerToEdit" 
+    (customerUpdated)="updateCustomerList($event)"
+    class="edit-customer-form">
+  </app-edit-customer>
+</div>

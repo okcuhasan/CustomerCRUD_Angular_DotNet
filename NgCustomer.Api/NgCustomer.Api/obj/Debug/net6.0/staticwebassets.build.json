@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "aN34u1bVsqjZ49V3HbeZ4D8TaLlhYAvdBmMFO3MV2Ko=",
+  "Source": "NgCustomer.Api",
+  "BasePath": "_content/NgCustomer.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
